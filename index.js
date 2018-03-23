@@ -1,11 +1,8 @@
 var express = require('express');
 var app = express();
 var bodyParser = require('body-parser');
-// var methodOverride = require('method-override');
-
 
 app.use(bodyParser.json()); 
-// app.use(methodOverride());
 app.use(bodyParser.urlencoded({ extended: true })); 
 
 var port = process.env.PORT || 8080;
